@@ -78,7 +78,7 @@ while(count< 1000 && keepGoing){
     const xor = [ 0, 1, 1, 0];
     if(arraysEqual(xor, res)){
         console.log(`found a result after ${count} tries`)
-        console.log(`${weightX} ${biasX} ${weightY} ${biasY} ${weightZ} ${biasZ}`);
+        console.log(`Weight X: ${weightX} Bias X: ${biasX} Weight Y: ${weightY} Bias Y: ${biasY} Weight Z: ${weightZ} Bias Z: ${biasZ}`);
         console.log(`(0,0) => sig(0*${weightX} + 0*${weightX} + ${biasX}) sig(0*${weightY} + 0*${weightY} + ${biasY}) => sig(${sig1}*${weightZ} + ${sig2}*${weightZ} + ${biasZ}) => 0`);
         console.log(`(0,1) => sig(0*${weightX} + 1*${weightX} + ${biasX}) sig(0*${weightY} + 1*${weightY} + ${biasY}) => sig(${sig1}*${weightZ} + ${sig2}*${weightZ} + ${biasZ}) => 1`);
         console.log(`(1,0) => sig(1*${weightX} + 0*${weightX} + ${biasX}) sig(1*${weightY} + 0*${weightY} + ${biasY}) => sig(${sig1}*${weightZ} + ${sig2}*${weightZ} + ${biasZ}) => 1`);
